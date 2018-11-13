@@ -7,8 +7,9 @@ This repository implements a simple two-layer neural network by using pure numpy
 Suppose we have a two-layer neural network illustrated as follow.
 Then we can obtain its forward pass:
 
-$$h^T=f(u), u^T=x^TW$$
-
+\begin{equation}
+h^T=f(u), u^T=x^TW$$
+\end{equation}
 
 $$y^T=h^TS$$
 
