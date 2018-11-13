@@ -11,7 +11,7 @@ $$h^T=f(u), u^T=x^TW$$
 $$y^T=h^TS$$
 $$\mathcal{L}=\mathcal{L}(y, t)$$
 
-where \\(x^T \in R^{B \times n_x}\\) is a mini-batch input, $W \in R^{n_x \times n_h}$ and $S \in {R}^{n_h \times n_y}$ are the learning parameters of the network, and $\mathcal{L}$ is the loss function.
+where $x^T \in R^{B \times n_x}$ is a mini-batch input, $W \in R^{n_x \times n_h}$ and $S \in {R}^{n_h \times n_y}$ are the learning parameters of the network, and $\mathcal{L}$ is the loss function.
 
 Now, the objective is to derive the gradients with respect to $S$ and $W$, respectively. 
 Let's first examine $\nabla_S \mathcal{L}$.
