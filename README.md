@@ -106,4 +106,4 @@ for i in range(500):
 ```
 
 ## Postscript
-It's been confusing me. I was thinking that this whole thing involves tensor product. But it turns out to be just an application of the fourth definition of matrix product.
+It's been confusing me. I was thinking that this whole thing involves tensor product. Surprisingly, however, it turns out to be just an application of the fourth definition of matrix product.
