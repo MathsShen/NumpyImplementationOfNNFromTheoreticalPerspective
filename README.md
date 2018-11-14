@@ -2,6 +2,9 @@
 
 This repository implements a simple two-layer neural network by using pure numpy. To this end, one has to have mastery of the chain rule of derivatives especially in matrix notation. This repository will first elaborate on the derivation from theoretical perspective and give its numpy implementation.
 
+## Prerequisites
+Before browsing the derivation, one has to install [Github with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima) into Chrome. After installation, refresh this page.
+
 ## Derivation
 
 Suppose we have a two-layer neural network illustrated as follow.
@@ -104,12 +107,3 @@ for i in range(500):
 
 ## Postscript
 It's been confusing me. I was thinking that this whole thing involves tensor product. But it turns out to be just an application of the fourth definition of matrix product.
-$$
-A_{mn}=
-\begin{vmatrix}
-a_{00}&a_{01}&{\cdots}&{a_{0n}}\\
-a_{10}&a_{11}&{\cdots}&{a_{1n}}\\
-{\vdots}&{\vdots}&{\ddots}&{\vdots}\\
-a_{m0}&a_{m1}&{\cdots}&{a_{mn}}\\
-\end{vmatrix}
-$$
