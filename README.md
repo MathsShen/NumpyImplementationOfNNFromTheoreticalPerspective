@@ -21,10 +21,8 @@ $$
 (y_1, y_2, ..., y_{n_y}) = (h_1, h_2, ..., h_{n_h})S = (h_1, h_2, ..., h_{n_h})
 \begin{bmatrix}
 | & | &  & |\\
-
-s_1 & s_2 & \cdots & s_{n_y}\\  
-
-| & | &  & |\\  
+s_1 & s_2 & \cdots & s_{n_y}\\
+| & | &  & |\\
 \end{bmatrix}
 $$
 
