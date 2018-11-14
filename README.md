@@ -19,7 +19,7 @@ where $x^T \in R^{B \times n_x}$ is a mini-batch input, $W \in R^{n_x \times n_h
 Now, the objective is to derive the gradients with respect to $S$ and $W$, respectively. 
 Let's first examine $\nabla_S \mathcal{L}$.
 By re-writting $y^T=h^TS$, we obtain
-<img src="./src/1.png" hegiht="90" align=center />
+<img src="./src/1.png" width="180" hegiht="90" align=center />
 $$\begin{equation}
 \begin{split}
 (y_1, y_2, ..., y_{n_y}) 
