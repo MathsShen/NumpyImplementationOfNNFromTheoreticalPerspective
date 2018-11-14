@@ -48,7 +48,7 @@ $$\begin{equation}
 \frac{\partial \mathcal{L}}{\partial y_1}h & \frac{\partial \mathcal{L}}{\partial y_2}h & \cdots & \frac{\partial \mathcal{L}}{\partial y_{n_y}}h\\
 | & | &  & |\\
 \end{bmatrix}
-= \left(\frac{\partial\mathcal{L}}{\partial v_i} h_j\right)_{i,j}=h \cdot \nabla_{y^T} \mathcal{L}
+= \left(\frac{\partial\mathcal{L}}{\partial v_i} h_j\right)_{i,j} = h \cdot \frac{\partial \mathcal{L}}{\partial y^T}
 \end{equation}$$.
 
 For the greadient wrt $W$, we first determine the gradient wrt $h^T$ and apply the same rule above. Specifically,
