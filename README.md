@@ -19,8 +19,7 @@ By re-writting $y^T=h^TS$, we obtain
 
 $$
 (y_1, y_2, ..., y_{n_y}) = (h_1, h_2, ..., h_{n_h})S = (h_1, h_2, ..., h_{n_h})
-$$
-$$
+=
 \begin{bmatrix}
 | & | &  & |\\
 s_1 & s_2 & \cdots & s_{n_y}\\
@@ -42,7 +41,8 @@ $$\nabla_S \mathcal{L} =
 | & | &  & |\\
 \frac{\partial \mathcal{L}}{\partial s_1} & \frac{\partial \mathcal{L}}{\partial s_2} & \cdots & \frac{\partial \mathcal{L}}{\partial s_{n_y}}\\
 | & | &  & |\\
-\end{bmatrix} =
+\end{bmatrix} 
+=
 \begin{bmatrix}
 | & | &  & |\\
 \frac{\partial \mathcal{L}}{\partial y_1}h & \frac{\partial \mathcal{L}}{\partial y_2}h & \cdots & \frac{\partial \mathcal{L}}{\partial y_{n_y}}h\\
