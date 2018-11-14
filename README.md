@@ -1,3 +1,17 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+         processEscapes: true
+        }
+      });
+</script>
+
 # Numpy Implementation Of NN From Theoretical Perspective
 
 This repository implements a simple two-layer neural network by using pure numpy. To this end, one has to have mastery of the chain rule of derivatives especially in matrix notation. This repository will first elaborate on the derivation from theoretical perspective and give its numpy implementation.
@@ -20,14 +34,12 @@ Now, the objective is to derive the gradients with respect to $S$ and $W$, respe
 Let's first examine $\nabla_S \mathcal{L}$.
 By re-writting $y^T=h^TS$, we obtain
 
-$$
-(y_1, y_2, ..., y_{n_y}) = (h_1, h_2, ..., h_{n_h})S = (h_1, h_2, ..., h_{n_h})
+$$(y_1, y_2, ..., y_{n_y}) = (h_1, h_2, ..., h_{n_h})S = (h_1, h_2, ..., h_{n_h})
 \begin{bmatrix}
 | & | &  & |\\
 s_1 & s_2 & \cdots & s_{n_y}\\
 | & | &  & |\\
-\end{bmatrix}
-$$
+\end{bmatrix}$$
 
 or
 
