@@ -36,7 +36,7 @@ $$y_{n_y} = h^Ts_{n_y}$$
 
 Then, $\frac{\partial\mathcal{L}}{\partial s_i} = \frac{\partial\mathcal{L}}{\partial y_i} \frac{\partial y_i}{\partial s_i} = \frac{\partial\mathcal{L}}{\partial y_i} h$. 
 Therefore,
-$$
+$$\begin{equation}
 \nabla_S \mathcal{L} = 
 \begin{bmatrix}
 | & | &  & |\\
@@ -48,9 +48,8 @@ $$
 \frac{\partial \mathcal{L}}{\partial y_1}h & \frac{\partial \mathcal{L}}{\partial y_2}h & \cdots & \frac{\partial \mathcal{L}}{\partial y_{n_y}}h\\
 | & | &  & |\\
 \end{bmatrix}
-= \left(\frac{\partial\mathcal{L}}{\partial v_i} h_j\right)_{i,j} 
-= h \cdot \nabla_{y^T} \mathcal{L}
-$$.
+= \left(\frac{\partial\mathcal{L}}{\partial v_i} h_j\right)_{i,j}=h \cdot \nabla_{y^T} \mathcal{L}
+\end{equation}$$.
 
 For the greadient wrt $W$, we first determine the gradient wrt $h^T$ and apply the same rule above. Specifically,
 
