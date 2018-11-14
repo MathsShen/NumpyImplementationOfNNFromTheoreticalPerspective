@@ -1,17 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-    <script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-         processEscapes: true
-        }
-      });
-</script>
-
 # Numpy Implementation Of NN From Theoretical Perspective
 
 This repository implements a simple two-layer neural network by using pure numpy. To this end, one has to have mastery of the chain rule of derivatives especially in matrix notation. This repository will first elaborate on the derivation from theoretical perspective and give its numpy implementation.
@@ -61,7 +47,7 @@ $$\nabla_S \mathcal{L} =
 \frac{\partial \mathcal{L}}{\partial y_1}h & \frac{\partial \mathcal{L}}{\partial y_2}h & \cdots & \frac{\partial \mathcal{L}}{\partial y_{n_y}}h\\
 | & | &  & |\\
 \end{bmatrix}
-= \left(\frac{\partial\mathcal{L}}{\partial v_i} h_j\right)_{i,j} = h \frac{\partial \mathcal{L}}{\partial y^T}$$.
+= \left(\frac{\partial\mathcal{L}}{\partial v_i} h_j\right)_{i,j} = h \cdot \nabla_{y^T}{\mathcal{L}}$$.
 
 For the greadient wrt $W$, we first determine the gradient wrt $h^T$ and apply the same rule above. Specifically,
 
