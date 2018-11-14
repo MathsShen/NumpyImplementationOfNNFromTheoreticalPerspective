@@ -104,3 +104,12 @@ for i in range(500):
 
 ## Postscript
 It's been confusing me. I was thinking that this whole thing involves tensor product. But it turns out to be just an application of the fourth definition of matrix product.
+$$
+A_{mn}=
+\begin{vmatrix}
+a_{00}&a_{01}&{\cdots}&{a_{0n}}\\
+a_{10}&a_{11}&{\cdots}&{a_{1n}}\\
+{\vdots}&{\vdots}&{\ddots}&{\vdots}\\
+a_{m0}&a_{m1}&{\cdots}&{a_{mn}}\\
+\end{vmatrix}
+$$
